@@ -7,7 +7,7 @@ class OrderNowSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
         color: Colors.green[400],
         borderRadius: BorderRadius.circular(8)
@@ -15,9 +15,9 @@ class OrderNowSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50),
-          Text(
+          const Text(
             "Claim your daily free delivery now!",
           style: TextStyle(
             fontSize: 30,
@@ -25,7 +25,7 @@ class OrderNowSection extends StatelessWidget {
             color: Colors.white
           ),
           ),
-          Text("\$5.00",
+          const Text("\$5.00",
             style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -39,7 +39,7 @@ class OrderNowSection extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: (){},
-                  child: Text("Order Now",
+                  child: const Text("Order Now",
                   style: TextStyle(
                     backgroundColor: Colors.green,
                         fontSize: 24,

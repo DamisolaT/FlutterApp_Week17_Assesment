@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:wtfweek17_assessment/home/widget/more_section.dart';
+
+import 'more_section.dart';
 
 
 
@@ -12,15 +13,15 @@ class MoreItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 16),
-      padding: EdgeInsets.symmetric(vertical: 16),
+      margin: const EdgeInsets.symmetric(vertical: 16),
+      padding: const EdgeInsets.symmetric(vertical: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("More",
+              const Text("More",
                 style:TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
@@ -28,7 +29,7 @@ class MoreItem extends StatelessWidget {
                 ),
                 ),
               TextButton(onPressed: (){},
-                  child: Row(
+                  child: const Row(
                     children: [
                       Text("See all",
                       style: TextStyle(
@@ -40,7 +41,9 @@ class MoreItem extends StatelessWidget {
                       color: Colors.green,
                       size: 16,)
                     ],
-                  ))
+                  ),
+              ),
+
             ],
           ),
         ],
